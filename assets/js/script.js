@@ -3,7 +3,7 @@ import { animate, stagger, onScroll } from "./vendor/anime.esm.min.js";
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Header entrance
-animate(".logo-mark, .logo-text, .icon-link", {
+animate(".logo-img, .icon-link", {
   opacity: [0, 1],
   translateY: [-8, 0],
   delay: stagger(70),
