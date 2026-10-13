@@ -137,3 +137,57 @@ animate(".logo-img, .icon-link", {
     ease: "inOutSine",
   });
 })();
+
+// Menu page: highlight the category chip for the section in view
+(function () {
+  const chips = Array.from(document.querySelectorAll(".menu-chip"));
+  const sections = Array.from(document.querySelectorAll(".menu-category"));
+  if (!chips.length || !sections.length) return;
+
+  function setActive(id) {
+    chips.forEach((chip) => {
+      const active = chip.getAttribute("href") === `#${id}`;
+      chip.classList.toggle("is-active", active);
+      // Scroll only the chip row sideways; scrollIntoView would also scroll the page
+      if (active) {
+        const row = chip.parentElement;
+        const left = chip.offsetLeft - row.offsetLeft;
+        if (left < row.scrollLeft || left + chip.offsetWidth > row.scrollLeft + row.clientWidth) {
+          row.scrollTo({ left: left - 24, behavior: "smooth" });
+        }
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) setActive(entry.target.id);
+      });
+    },
+    { rootMargin: "-160px 0px -60% 0px" }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+  setActive(sections[0].id);
+})();
+
+// Menu page: fade cards in as each category scrolls into view
+(function () {
+  const grids = document.querySelectorAll(".menu-grid");
+  grids.forEach((grid) => {
+    const cards = grid.querySelectorAll(".menu-card");
+    cards.forEach((el) => {
+      el.style.opacity = "0";
+      el.style.transform = "translateY(20px)";
+    });
+    animate(cards, {
+      opacity: [0, 1],
+      translateY: [20, 0],
+      duration: 600,
+      delay: stagger(60),
+      ease: "outQuad",
+      autoplay: onScroll({ target: grid, enter: "bottom-=5% top", repeat: false }),
+    });
+  });
+})();
