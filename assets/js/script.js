@@ -13,7 +13,7 @@ animate(".logo-img, .icon-link", {
 
 // Hero carousel
 (function () {
-  const hero = document.getElementById("hero-slider");
+  const hero = document.querySelector(".hero");
   if (!hero) return;
 
   const track = hero.querySelector(".hero-track");
@@ -47,9 +47,16 @@ animate(".logo-img, .icon-link", {
   function next() { goTo(index + 1); }
   function prev() { goTo(index - 1); }
 
-  function startAutoplay() { timer = setInterval(next, AUTOPLAY_MS); }
-  function stopAutoplay() { clearInterval(timer); }
-  function restartAutoplay() { stopAutoplay(); startAutoplay(); }
+  // Paused while hovered or focused; only ever one interval running
+  let hovered = false;
+  let focused = false;
+
+  function stopAutoplay() { clearInterval(timer); timer = null; }
+  function startAutoplay() {
+    stopAutoplay();
+    if (!hovered && !focused) timer = setInterval(next, AUTOPLAY_MS);
+  }
+  function restartAutoplay() { startAutoplay(); }
 
   function pressFeedback(btn) {
     animate(btn, { scale: [1, 0.82, 1], duration: 320, ease: "outQuad" });
@@ -62,10 +69,19 @@ animate(".logo-img, .icon-link", {
     dot.addEventListener("click", () => { goTo(i); restartAutoplay(); });
   });
 
-  hero.addEventListener("mouseenter", stopAutoplay);
-  hero.addEventListener("mouseleave", startAutoplay);
-  hero.addEventListener("focusin", stopAutoplay);
-  hero.addEventListener("focusout", startAutoplay);
+  hero.addEventListener("mouseenter", () => { hovered = true; stopAutoplay(); });
+  hero.addEventListener("mouseleave", () => { hovered = false; startAutoplay(); });
+  // Only keyboard focus pauses; a mouse click on an arrow shouldn't leave it stuck
+  hero.addEventListener("focusin", (e) => {
+    if (!e.target.matches(":focus-visible")) return;
+    focused = true;
+    stopAutoplay();
+  });
+  hero.addEventListener("focusout", (e) => {
+    if (hero.contains(e.relatedTarget)) return; // focus moved between arrows/dots
+    focused = false;
+    startAutoplay();
+  });
 
   hero.addEventListener("keydown", (e) => {
     if (e.key === "ArrowRight") { next(); restartAutoplay(); }
@@ -89,18 +105,14 @@ animate(".logo-img, .icon-link", {
   startAutoplay();
 })();
 
-// Scroll reveal for the Visit section
+// Scroll reveal for section headings and card grids
 (function () {
-  const heading = document.querySelector("#visit .section-head");
-  const cards = document.querySelectorAll("#visit .outlet-card, #visit .qr-card");
-  const grid = document.querySelector("#visit .visit-grid");
-
   function hide(el, y) {
     el.style.opacity = "0";
     el.style.transform = `translateY(${y}px)`;
   }
 
-  if (heading) {
+  document.querySelectorAll(".page-section .section-head").forEach((heading) => {
     hide(heading, 16);
     animate(heading, {
       opacity: [0, 1],
@@ -109,9 +121,10 @@ animate(".logo-img, .icon-link", {
       ease: "outQuad",
       autoplay: onScroll({ target: heading, enter: "bottom-=10% top", repeat: false }),
     });
-  }
+  });
 
-  if (cards.length && grid) {
+  document.querySelectorAll(".reveal-grid").forEach((grid) => {
+    const cards = Array.from(grid.children);
     cards.forEach((el) => hide(el, 28));
     animate(cards, {
       opacity: [0, 1],
@@ -121,7 +134,7 @@ animate(".logo-img, .icon-link", {
       ease: "outExpo",
       autoplay: onScroll({ target: grid, enter: "bottom-=10% top", repeat: false }),
     });
-  }
+  });
 })();
 
 // QR "scan line" sweep
@@ -138,10 +151,12 @@ animate(".logo-img, .icon-link", {
   });
 })();
 
-// Menu page: highlight the category chip for the section in view
+// Highlight the nav chip for the section in view (homepage sections, menu categories)
 (function () {
   const chips = Array.from(document.querySelectorAll(".menu-chip"));
-  const sections = Array.from(document.querySelectorAll(".menu-category"));
+  const sections = chips
+    .map((chip) => document.querySelector(chip.getAttribute("href")))
+    .filter(Boolean);
   if (!chips.length || !sections.length) return;
 
   function setActive(id) {

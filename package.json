@@ -2,7 +2,7 @@
   "name": "wok-collective-website",
   "version": "0.1.0",
   "private": true,
-  "description": "Wok Collective outlet landing page with QR ordering placeholder.",
+  "description": "Claw Up Seafood & Zichar website.",
   "scripts": {
     "start": "http-server -p 8000 -c-1"
   },

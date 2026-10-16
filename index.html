@@ -4,20 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#050505">
-<title>Wok Collective | Order Online</title>
+<title>Claw Up Seafood &amp; Zichar | Singapore</title>
+<meta name="description" content="Claw Up Seafood &amp; Zichar — flavour-packed crab creations, fresh seafood and wok-fried zi char classics at Jalan Besar, Singapore. Rated 4.8 stars on Google.">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
-<link rel="stylesheet" href="assets/css/style.css?v=6">
+<link rel="stylesheet" href="assets/css/style.css?v=9">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#" class="logo">
+    <a href="#top" class="logo">
       <img class="logo-img" src="assets/images/claw-up-logo.png" alt="Claw Up 蟹潮" width="64" height="64">
     </a>
     <div class="header-actions">
       <a href="menu.html" class="nav-menu-btn"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>Our Menu</span></a>
       <nav class="social-nav" aria-label="Social media links">
+        <!-- TODO: real Facebook / Instagram URLs from client -->
         <a href="#" aria-label="Facebook" class="icon-link">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
         </a>
@@ -29,30 +31,57 @@
   </div>
 </header>
 
-<section class="hero" id="hero-slider" aria-roledescription="carousel" aria-label="Featured highlights">
+<nav class="menu-nav" aria-label="Page sections">
+  <div class="container menu-nav-inner">
+    <a class="menu-chip" href="#top">Home</a>
+    <a class="menu-chip" href="#about">About Us</a>
+    <a class="menu-chip" href="#membership">Claw Up Club</a>
+    <a class="menu-chip" href="#contact">Contact &amp; Location</a>
+    <a class="menu-chip" href="#blog">Blog</a>
+  </div>
+</nav>
+
+<!-- Promo carousel. Slides 1–3 use placeholder photos and copy until the client sends promo artwork. -->
+<section class="hero page-section" id="top" aria-roledescription="carousel" aria-label="Current promotions">
   <div class="hero-track">
-    <div class="hero-slide hero-slide-1" role="group" aria-roledescription="slide" aria-label="1 of 3">
+    <div class="hero-slide hero-slide-1" role="group" aria-roledescription="slide" aria-label="1 of 5">
       <div class="container hero-inner">
-        <p class="hero-eyebrow">Wok Collective Delivery &amp; Pickup</p>
-        <h1>Order From Anywhere</h1>
-        <p class="hero-sub">Drop by our outlet, or scan the QR code to browse the menu and order from your phone.</p>
-        <a href="#visit" class="btn btn-primary">Visit &amp; Order</a>
+        <p class="hero-eyebrow">Promo</p>
+        <h1>2 Crabs Promo</h1>
+        <p class="hero-sub">Placeholder — promo details and price coming soon.</p>
+        <a href="#contact" class="btn btn-primary">Reserve a Table</a>
       </div>
     </div>
-    <div class="hero-slide hero-slide-2" role="group" aria-roledescription="slide" aria-label="2 of 3">
+    <div class="hero-slide hero-slide-2" role="group" aria-roledescription="slide" aria-label="2 of 5">
       <div class="container hero-inner">
-        <p class="hero-eyebrow">Fresh, Fired-Up Daily</p>
-        <h1>Wok-Fried Favorites</h1>
-        <p class="hero-sub">Placeholder promo — swap in a hero shot of your signature dish here.</p>
-        <a href="menu.html" class="btn btn-primary">See the Menu</a>
+        <p class="hero-eyebrow">Limited Time Only</p>
+        <h1>Online Opening Promo Set</h1>
+        <p class="hero-sub">Placeholder — set contents and price coming soon.</p>
+        <a href="#contact" class="btn btn-primary">Find Out More</a>
       </div>
     </div>
-    <div class="hero-slide hero-slide-3" role="group" aria-roledescription="slide" aria-label="3 of 3">
+    <div class="hero-slide hero-slide-3" role="group" aria-roledescription="slide" aria-label="3 of 5">
       <div class="container hero-inner">
-        <p class="hero-eyebrow">Now Open</p>
-        <h1>Come Say Hi</h1>
-        <p class="hero-sub">Placeholder announcement — use this slot for openings, promos, or events.</p>
-        <a href="#visit" class="btn btn-primary">Find Us</a>
+        <p class="hero-eyebrow">Promo</p>
+        <h1>Mini Buffet</h1>
+        <p class="hero-sub">Placeholder — buffet details and price coming soon.</p>
+        <a href="#contact" class="btn btn-primary">Find Out More</a>
+      </div>
+    </div>
+    <div class="hero-slide hero-slide-4" role="group" aria-roledescription="slide" aria-label="4 of 5">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">SG First</p>
+        <h1>Creamy Corn Crab</h1>
+        <p class="hero-sub">Our one-of-a-kind creation — sweet, creamy and packed with flavour.</p>
+        <a href="menu.html#cat-crab" class="btn btn-primary">See the Menu</a>
+      </div>
+    </div>
+    <div class="hero-slide hero-slide-5" role="group" aria-roledescription="slide" aria-label="5 of 5">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Signature</p>
+        <h1>Chilli Crab / Black Pepper Crab</h1>
+        <p class="hero-sub">The classics, done the Claw Up way.</p>
+        <a href="menu.html#cat-crab" class="btn btn-primary">See the Menu</a>
       </div>
     </div>
   </div>
@@ -68,57 +97,179 @@
     <button class="hero-dot" type="button" role="tab" aria-label="Go to slide 1" aria-selected="true"></button>
     <button class="hero-dot" type="button" role="tab" aria-label="Go to slide 2" aria-selected="false"></button>
     <button class="hero-dot" type="button" role="tab" aria-label="Go to slide 3" aria-selected="false"></button>
+    <button class="hero-dot" type="button" role="tab" aria-label="Go to slide 4" aria-selected="false"></button>
+    <button class="hero-dot" type="button" role="tab" aria-label="Go to slide 5" aria-selected="false"></button>
   </div>
 </section>
 
+<!-- TODO: link to the client's Google Business profile -->
+<a class="review-strip" href="#">
+  <div class="container review-strip-inner">
+    <span class="review-stars" aria-hidden="true">★★★★★</span>
+    <span class="review-score">4.8</span>
+    <span class="review-text">Highly Raved Unconventional Seafood &amp; Zichar in Singapore, Delivered to Your Doorstep</span>
+    <span class="review-source">Google Reviews</span>
+  </div>
+</a>
+
 <main>
-  <section id="visit" class="visit-section">
+  <section id="about" class="page-section">
     <div class="container">
       <div class="section-head">
-        <h2>Visit Us</h2>
-        <p>Please come and enjoy our tasty food!</p>
+        <p class="hero-eyebrow">About Us</p>
+        <h2>Seafood &amp; Zi Char, All Under One Roof</h2>
+      </div>
+      <div class="about-body">
+        <p>At Claw Up Seafood &amp; Zichar, we want to bring people together through exceptional zi char and seafood. We are committed to serving bold flavours, fresh ingredients, and authentic wok craftsmanship in a vibrant space where every meal becomes a celebration of family, friendship, and good times.</p>
+        <p>Inspired by Singapore's vibrant seafood culture and beloved Zi Char traditions, Claw Up Seafood &amp; Zichar brings together the best of both worlds with flavour-packed crab creations, fresh seafood favourites and comforting Chinese wok-fried classics, all under one roof.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="membership" class="page-section page-section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="hero-eyebrow">Membership</p>
+        <h2>Claw Up Club</h2>
+        <p>Earn points every visit and climb the tiers for bigger rewards.</p>
       </div>
 
-      <div class="visit-grid">
-        <article class="outlet-card outlet-card-lg">
-          <span class="badge">Our Outlet</span>
+      <div class="card-grid tier-grid reveal-grid">
+        <article class="card tier-card">
+          <span class="badge">Tier 1</span>
+          <h3 class="tier-name">Claw Rookie</h3>
+          <p class="tier-unlock">Free to join</p>
+          <ul class="tier-perks">
+            <li><strong>1 point</strong> per $1 spent</li>
+            <li>$25 Welcome Voucher (min. spend $150)</li>
+            <li>Mini Birthday Treat: Cake</li>
+          </ul>
+        </article>
+        <article class="card tier-card">
+          <span class="badge">Tier 2</span>
+          <h3 class="tier-name">Claw Catcher</h3>
+          <p class="tier-unlock">Unlock after 3 qualifying visits in 90 days</p>
+          <ul class="tier-perks">
+            <li><strong>1.5 points</strong> per $1 spent</li>
+            <li>Bonus 40 points on your 4th visit</li>
+            <li>Access to members-only promotions</li>
+            <li>Special Birthday Reward: 1 Single 700g Crab + Cake</li>
+          </ul>
+        </article>
+        <article class="card tier-card tier-card-top">
+          <span class="badge">Tier 3</span>
+          <h3 class="tier-name">Claw Boss</h3>
+          <p class="tier-unlock">Unlock after 6 qualifying visits in 180 days</p>
+          <ul class="tier-perks">
+            <li><strong>2 points</strong> per $1 spent</li>
+            <li>Bonus 60 points on your 6th visit</li>
+            <li>Access to members-only promotions</li>
+            <li>Privilege Birthday Reward: 1 Lobster Platter + Cake</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="redeem">
+        <h3>Points Redemption</h3>
+        <ul class="redeem-list">
+          <li><span class="redeem-points">200 points</span><span class="redeem-value">$10 voucher</span></li>
+          <li><span class="redeem-points">450 points</span><span class="redeem-value">$25 voucher</span></li>
+          <li><span class="redeem-points">850 points</span><span class="redeem-value">$50 voucher</span></li>
+        </ul>
+        <p class="fine-print">Sign-up details coming soon. Ask our staff in store to find out more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="page-section">
+    <div class="container">
+      <div class="section-head">
+        <p class="hero-eyebrow">Contact Us</p>
+        <h2>Get in Touch</h2>
+      </div>
+
+      <div class="card-grid contact-grid reveal-grid">
+        <article class="card">
+          <span class="badge">Order Enquiry</span>
+          <ul class="outlet-details">
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/6589016823" target="_blank" rel="noopener">+65 8901 6823</a></li>
+            <li><strong>Email:</strong> <a href="mailto:clawupsingapore@gmail.com">clawupsingapore@gmail.com</a></li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="badge">Reservations</span>
+          <p class="card-text">Book a table online through Oddle.</p>
+          <a class="btn btn-primary" href="https://clawupsingapore.oddle.me/en_SG/reservations" target="_blank" rel="noopener">Reserve a Table</a>
+        </article>
+        <article class="card">
+          <span class="badge">Marketing &amp; Business</span>
+          <p class="card-text">Marketing collaborations and business development.</p>
+          <ul class="outlet-details">
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/6588379672" target="_blank" rel="noopener">+65 8837 9672</a></li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="visit-grid reveal-grid">
+        <article class="card outlet-card-lg">
+          <span class="badge">Dine In &amp; Self Collection</span>
           <div>
-            <p class="outlet-name">Wok Collective — Placeholder Outlet</p>
-            <p class="outlet-area">123 Placeholder Street, #01-01, Singapore 123456</p>
+            <p class="outlet-name">Claw Up Seafood &amp; Zichar</p>
+            <p class="outlet-area">100 Tyrwhitt Road, #01-05 Jalan Besar Sports Centre, Singapore 207542<br>(Inside The Lobby by The Food Paradise Coffeeshop)</p>
           </div>
           <ul class="outlet-details">
-            <li><strong>Hours:</strong> 11:00 AM – 9:00 PM daily (placeholder)</li>
-            <li><strong>Phone:</strong> +65 0000 0000 (placeholder)</li>
+            <li><strong>Hours:</strong> 11:30 AM – 10:30 PM daily</li>
+            <li><strong>Nearest MRT:</strong> Lavender and Bendemeer</li>
+            <li><strong>Parking:</strong> Multi-storey carpark just above the coffeeshop</li>
           </ul>
-          <a class="btn btn-secondary" href="#" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&amp;query=100+Tyrwhitt+Road+Singapore+207542" target="_blank" rel="noopener">Get Directions</a>
         </article>
 
-        <article class="qr-card">
+        <article class="card qr-card">
           <span class="badge">Scan to Order</span>
           <p class="qr-title">Scan to View Our Menu</p>
-          <div class="qr-placeholder" role="img" aria-label="Placeholder QR code linking to the menu">
-            <svg viewBox="0 0 29 29" width="180" height="180">
-              <rect width="29" height="29" fill="#fff"/>
-              <g fill="#000">
-                <rect x="0" y="0" width="7" height="7"/><rect x="1.5" y="1.5" width="4" height="4" fill="#fff"/><rect x="2.5" y="2.5" width="2" height="2"/>
-                <rect x="22" y="0" width="7" height="7"/><rect x="23.5" y="1.5" width="4" height="4" fill="#fff"/><rect x="24.5" y="2.5" width="2" height="2"/>
-                <rect x="0" y="22" width="7" height="7"/><rect x="1.5" y="23.5" width="4" height="4" fill="#fff"/><rect x="2.5" y="24.5" width="2" height="2"/>
-                <rect x="9" y="0" width="1" height="1"/><rect x="11" y="0" width="1" height="1"/><rect x="9" y="2" width="1" height="1"/><rect x="13" y="1" width="1" height="1"/><rect x="16" y="0" width="1" height="1"/><rect x="18" y="1" width="1" height="1"/><rect x="9" y="4" width="1" height="1"/><rect x="11" y="4" width="1" height="1"/><rect x="14" y="4" width="1" height="1"/><rect x="17" y="4" width="1" height="1"/><rect x="19" y="3" width="1" height="1"/>
-                <rect x="0" y="9" width="1" height="1"/><rect x="2" y="9" width="1" height="1"/><rect x="4" y="10" width="1" height="1"/><rect x="0" y="12" width="1" height="1"/><rect x="3" y="13" width="1" height="1"/><rect x="1" y="15" width="1" height="1"/><rect x="4" y="16" width="1" height="1"/><rect x="0" y="18" width="1" height="1"/><rect x="2" y="19" width="1" height="1"/>
-                <rect x="9" y="9" width="1" height="1"/><rect x="11" y="9" width="1" height="1"/><rect x="13" y="9" width="1" height="1"/><rect x="15" y="10" width="1" height="1"/><rect x="17" y="9" width="1" height="1"/><rect x="19" y="10" width="1" height="1"/><rect x="21" y="9" width="1" height="1"/>
-                <rect x="9" y="11" width="1" height="1"/><rect x="12" y="12" width="1" height="1"/><rect x="14" y="11" width="1" height="1"/><rect x="16" y="12" width="1" height="1"/><rect x="18" y="13" width="1" height="1"/><rect x="20" y="12" width="1" height="1"/><rect x="22" y="11" width="1" height="1"/>
-                <rect x="10" y="14" width="1" height="1"/><rect x="13" y="14" width="1" height="1"/><rect x="15" y="15" width="1" height="1"/><rect x="17" y="14" width="1" height="1"/><rect x="19" y="15" width="1" height="1"/><rect x="21" y="14" width="1" height="1"/>
-                <rect x="9" y="17" width="1" height="1"/><rect x="11" y="17" width="1" height="1"/><rect x="14" y="18" width="1" height="1"/><rect x="16" y="17" width="1" height="1"/><rect x="18" y="18" width="1" height="1"/><rect x="20" y="17" width="1" height="1"/><rect x="22" y="18" width="1" height="1"/>
-                <rect x="9" y="20" width="1" height="1"/><rect x="12" y="21" width="1" height="1"/><rect x="15" y="20" width="1" height="1"/><rect x="17" y="21" width="1" height="1"/><rect x="19" y="20" width="1" height="1"/><rect x="21" y="21" width="1" height="1"/>
-                <rect x="22" y="14" width="1" height="1"/><rect x="24" y="9" width="1" height="1"/><rect x="26" y="10" width="1" height="1"/><rect x="24" y="12" width="1" height="1"/><rect x="27" y="13" width="1" height="1"/><rect x="25" y="15" width="1" height="1"/><rect x="28" y="16" width="1" height="1"/><rect x="24" y="18" width="1" height="1"/><rect x="26" y="19" width="1" height="1"/><rect x="24" y="21" width="1" height="1"/><rect x="27" y="20" width="1" height="1"/>
-                <rect x="9" y="24" width="1" height="1"/><rect x="11" y="24" width="1" height="1"/><rect x="13" y="25" width="1" height="1"/><rect x="15" y="24" width="1" height="1"/><rect x="17" y="25" width="1" height="1"/><rect x="19" y="24" width="1" height="1"/><rect x="21" y="25" width="1" height="1"/><rect x="9" y="27" width="1" height="1"/><rect x="12" y="28" width="1" height="1"/><rect x="14" y="27" width="1" height="1"/><rect x="16" y="28" width="1" height="1"/><rect x="18" y="27" width="1" height="1"/><rect x="20" y="28" width="1" height="1"/>
-                <rect x="22" y="24" width="1" height="1"/><rect x="24" y="25" width="1" height="1"/><rect x="26" y="24" width="1" height="1"/><rect x="28" y="25" width="1" height="1"/><rect x="24" y="27" width="1" height="1"/><rect x="26" y="28" width="1" height="1"/>
-              </g>
-            </svg>
-            <span class="qr-scanline" aria-hidden="true"></span>
+          <a class="qr-placeholder" href="https://selforder.ireachfnb.com/checkin/6a7004a13b4923145022e717" target="_blank" rel="noopener">
+            <img class="qr-img" src="assets/images/order-qr.png" alt="QR code to view our menu and order" width="180" height="180">
+          </a>
+          <p class="qr-caption">Scan with your phone camera to browse and order</p>
+          <a class="btn btn-primary" href="https://selforder.ireachfnb.com/checkin/6a7004a13b4923145022e717" target="_blank" rel="noopener">Click Here to Order</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder posts until the blog system is set up and the client writes real ones -->
+  <section id="blog" class="page-section page-section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="hero-eyebrow">Blog</p>
+        <h2>Claw Up Blog</h2>
+        <p>Stories, guides and news from our kitchen.</p>
+      </div>
+      <div class="card-grid blog-grid reveal-grid">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="assets/img/menu/chilli-crab.jpg" alt="" width="720" height="720" loading="lazy" decoding="async">
+            <span class="blog-date">Coming<br>Soon</span>
           </div>
-          <p class="qr-caption">Scan with your phone camera to open the menu <em>(placeholder — not yet live)</em></p>
-          <a class="btn btn-primary btn-block" href="#">Order Online <span class="coming-soon">Coming Soon</span></a>
+          <h3>Placeholder: Where to Find the Best Chilli Crab in Singapore</h3>
+          <p>Blog posts will appear here once they're published.</p>
+        </article>
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="assets/img/menu/cereal-prawn.jpg" alt="" width="720" height="720" loading="lazy" decoding="async">
+            <span class="blog-date">Coming<br>Soon</span>
+          </div>
+          <h3>Placeholder: A Beginner's Guide to Zi Char</h3>
+          <p>Blog posts will appear here once they're published.</p>
+        </article>
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="assets/img/menu/creamy-corn-crab.jpg" alt="" width="720" height="720" loading="lazy" decoding="async">
+            <span class="blog-date">Coming<br>Soon</span>
+          </div>
+          <h3>Placeholder: The Story Behind Our Creamy Corn Crab</h3>
+          <p>Blog posts will appear here once they're published.</p>
         </article>
       </div>
     </div>
@@ -127,15 +278,15 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> Wok Collective. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Claw Up Seafood &amp; Zichar. All rights reserved.</p>
     <div class="footer-links">
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
-      <a href="#">Need help? Click here</a>
+      <a href="#contact">Need help? Click here</a>
     </div>
   </div>
 </footer>
 
-<script type="module" src="assets/js/script.js?v=2"></script>
+<script type="module" src="assets/js/script.js?v=4"></script>
 </body>
 </html>
