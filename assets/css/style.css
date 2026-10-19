@@ -416,6 +416,7 @@ a { color: inherit; }
 
 .redeem-points { font-weight: 700; }
 .redeem-value { color: #ff5a4d; font-weight: 700; }
+.redeem .btn { margin-top: 24px; }
 
 .fine-print { margin: 14px 0 0; font-size: 0.85rem; color: var(--muted); }
 
