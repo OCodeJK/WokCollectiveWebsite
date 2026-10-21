@@ -26,22 +26,10 @@ animate(".logo-img, .icon-link", {
   let index = 0;
   let timer = null;
 
-  function revealSlideContent(slideEl) {
-    const items = slideEl.querySelectorAll(".hero-eyebrow, h1, .hero-sub, .btn");
-    animate(items, {
-      opacity: [0, 1],
-      translateY: [18, 0],
-      delay: stagger(90),
-      duration: 550,
-      ease: "outQuad",
-    });
-  }
-
   function goTo(i) {
     index = (i + slides.length) % slides.length;
     track.style.transform = `translateX(-${index * 100}%)`;
     dots.forEach((dot, d) => dot.setAttribute("aria-selected", d === index ? "true" : "false"));
-    revealSlideContent(slides[index]);
   }
 
   function next() { goTo(index + 1); }
@@ -137,24 +125,12 @@ animate(".logo-img, .icon-link", {
   });
 })();
 
-// QR "scan line" sweep
-(function () {
-  const scanline = document.querySelector(".qr-scanline");
-  if (!scanline) return;
-
-  animate(scanline, {
-    translateY: [0, 172],
-    loop: true,
-    alternate: true,
-    duration: 1800,
-    ease: "inOutSine",
-  });
-})();
-
 // Highlight the nav chip for the section in view (homepage sections, menu categories)
 (function () {
   const chips = Array.from(document.querySelectorAll(".menu-chip"));
+  // Skip chips that link to another page (Shop -> menu.html)
   const sections = chips
+    .filter((chip) => chip.getAttribute("href").startsWith("#"))
     .map((chip) => document.querySelector(chip.getAttribute("href")))
     .filter(Boolean);
   if (!chips.length || !sections.length) return;
