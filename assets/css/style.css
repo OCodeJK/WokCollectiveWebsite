@@ -532,6 +532,8 @@ a { color: inherit; }
 .review-meta { margin: 0; font-size: 0.8rem; color: var(--muted); }
 .review-card .review-stars { font-size: 0.95rem; }
 .review-quote { margin: 0; color: var(--char); font-size: 0.95rem; }
+.review-quote p { margin: 0 0 10px; }
+.review-quote p:last-child { margin-bottom: 0; }
 
 .reviews-cta { text-align: center; margin-top: 32px; }
 
