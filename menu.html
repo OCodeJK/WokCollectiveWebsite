@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=16">
+<link rel="stylesheet" href="assets/css/style.css?v=17">
 </head>
 <body>
 
@@ -43,9 +43,16 @@
 <nav class="menu-nav" aria-label="Menu categories">
   <div class="container menu-nav-inner">
       <a class="menu-chip" href="#cat-crab">Crab</a>
-      <a class="menu-chip" href="#cat-seafood">Seafood</a>
-      <a class="menu-chip" href="#cat-meat">Chicken, Pork &amp; Beef</a>
-      <a class="menu-chip" href="#cat-veg">Vegetables &amp; Tofu</a>
+      <a class="menu-chip" href="#cat-fish">Fish</a>
+      <a class="menu-chip" href="#cat-prawn">Prawn</a>
+      <a class="menu-chip" href="#cat-sotong">Sotong</a>
+      <a class="menu-chip" href="#cat-soup">Soup</a>
+      <a class="menu-chip" href="#cat-beef">Beef</a>
+      <a class="menu-chip" href="#cat-chicken">Chicken</a>
+      <a class="menu-chip" href="#cat-pork">Pork</a>
+      <a class="menu-chip" href="#cat-veg">Vegetables</a>
+      <a class="menu-chip" href="#cat-egg">Egg</a>
+      <a class="menu-chip" href="#cat-beancurd">Beancurd</a>
       <a class="menu-chip" href="#cat-rice">Rice</a>
       <a class="menu-chip" href="#cat-noodles">Noodles</a>
   </div>
@@ -53,279 +60,644 @@
 
 <main class="menu-page">
   <div class="container">
+      <p class="portion-note"><strong>Portions:</strong> S serves 2–3 pax · M serves 3–5 pax · L serves 6–8 pax</p>
       <section class="menu-category" id="cat-crab" data-category="crab">
-        <h2 class="menu-category-title">Crab <span class="menu-count">3</span></h2>
+        <h2 class="menu-category-title">Crab <span class="menu-category-zh">螃蟹</span> <span class="menu-count">4</span></h2>
         <div class="menu-grid">
           <article class="menu-card">
-            <img src="assets/img/menu/chilli-crab.jpg" alt="Chilli Crab" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Chilli Crab</h3>
+            <img src="assets/img/menu/chilli-crab.jpg" alt="Single Crab" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">螃蟹单点</p>
+              <h3 class="menu-card-name">Single Crab</h3>
+              <p class="menu-price"><span><span class="price-size">600g</span> $48</span><span><span class="price-size">700g</span> $78</span><span><span class="price-size">800g</span> $88</span><span><span class="price-size">1kg</span> $98</span><span><span class="price-size">1.4kg</span> $139</span></p>
+            </div>
           </article>
           <article class="menu-card">
-            <img src="assets/img/menu/black-pepper-crab.jpg" alt="Black Pepper Crab" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Black Pepper Crab</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/creamy-corn-crab.jpg" alt="Creamy Corn Crab" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Creamy Corn Crab</h3>
+            <img src="assets/img/menu/creamy-corn-crab.jpg" alt="2 Crabs Promo" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">螃蟹两只</p>
+              <h3 class="menu-card-name">2 Crabs Promo</h3>
+              <p class="menu-price"><span><span class="price-size">600g</span> $85</span><span><span class="price-size">700g</span> $128</span><span><span class="price-size">800g</span> $158</span><span><span class="price-size">1kg</span> $170</span><span><span class="price-size">1.4kg</span> $258</span></p>
+              <p class="menu-note">700g and above can choose 2 Flavours</p>
+            </div>
           </article>
         </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">阿拉斯加螃蟹</span><span class="menu-list-en">Alaskan King Crab - 2.4kg</span><span class="menu-note">Requires 3 days in advance Preorder</span></div><p class="menu-price"><span>$430</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">炸馒头</span><span class="menu-list-en">Fried Mantou</span></div><p class="menu-price"><span><span class="price-size">6 pcs</span> $7.50</span><span><span class="price-size">12 pcs</span> $11</span></p></li>
+        </ul>
+        <div class="crab-flavours">
+          <h3>Choose Your Crab Flavour</h3>
+          <ul>
+            <li>Signature Creamy Corn Crab <span class="flavour-extra">+$10</span></li>
+            <li>Mongolian Truffle Sauce <span class="flavour-extra">+$10</span></li>
+            <li>Signature Braised Bee Hoon Crab <span class="flavour-extra">+$8</span></li>
+            <li>Crab Thick Bee Hoon Soup <span class="flavour-extra">+$8</span></li>
+            <li>Signature Chilli Crab</li>
+            <li>Signature Black Pepper Crab</li>
+            <li>Signature Salted Egg Crab</li>
+            <li>Ginger Spring Onion Crab</li>
+            <li>Steam Crab</li>
+            <li>White Pepper Crab</li>
+            <li>Gam Heong Crab</li>
+          </ul>
+        </div>
       </section>
-      <section class="menu-category" id="cat-seafood" data-category="seafood">
-        <h2 class="menu-category-title">Seafood <span class="menu-count">16</span></h2>
+      <section class="menu-category" id="cat-fish" data-category="fish">
+        <h2 class="menu-category-title">Fish <span class="menu-category-zh">鱼</span> <span class="menu-count">21</span></h2>
         <div class="menu-grid">
           <article class="menu-card">
-            <img src="assets/img/menu/cereal-prawn.jpg" alt="Cereal Prawn" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Cereal Prawn</h3>
+            <img src="assets/img/menu/fruity-crispy-red-grouper.jpg" alt="Fruity Red Grouper" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">鲜果伴红斑球</p>
+              <h3 class="menu-card-name">Fruity Red Grouper</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $35</span><span><span class="price-size">M</span> $60</span><span><span class="price-size">L</span> $75</span></p>
+            </div>
           </article>
           <article class="menu-card">
-            <img src="assets/img/menu/salted-egg-prawn-ball.jpg" alt="Salted Egg Prawn Ball" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Salted Egg Prawn Ball</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/salad-prawn-ball.jpg" alt="Salad Prawn Ball" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Salad Prawn Ball</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/handmade-prawn-roll.jpg" alt="Handmade Prawn Roll" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Handmade Prawn Roll</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/salted-egg-sotong.jpg" alt="Salted Egg Sotong" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Salted Egg Sotong</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/crispy-fried-sotong.jpg" alt="Crispy Fried Sotong" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Crispy Fried Sotong</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/assam-sambal-sotong.jpg" alt="Assam Sambal Sotong" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Assam Sambal Sotong</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/fruity-crispy-red-grouper.jpg" alt="Fruity Crispy Red Grouper" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Fruity Crispy Red Grouper</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/steamed-fish.jpg" alt="Steamed Fish" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Steamed Fish</h3>
+            <img src="assets/img/menu/assam-fish-head-tail.jpg" alt="Assam Fish Head" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">亚叁鱼头</p>
+              <h3 class="menu-card-name">Assam Fish Head</h3>
+              <p class="menu-price"><span>$42</span></p>
+            </div>
           </article>
           <article class="menu-card">
             <img src="assets/img/menu/curry-fish-head.jpg" alt="Curry Fish Head" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Curry Fish Head</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/assam-fish-head-tail.jpg" alt="Assam Fish Head / Tail" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Assam Fish Head / Tail</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/fish-head-with-bitter-gourd-sauce.jpg" alt="Fish Head with Bitter Gourd Sauce" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Fish Head with Bitter Gourd Sauce</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/fish-tail-with-bitter-gourd-sauce.jpg" alt="Fish Tail with Bitter Gourd Sauce" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Fish Tail with Bitter Gourd Sauce</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/sliced-fish-with-dried-chilli.jpg" alt="Sliced Fish with Dried Chilli" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Sliced Fish with Dried Chilli</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">咖喱鱼头</p>
+              <h3 class="menu-card-name">Curry Fish Head</h3>
+              <p class="menu-price"><span>$39</span></p>
+            </div>
           </article>
           <article class="menu-card">
             <img src="assets/img/menu/sliced-fish-with-spring-onion.jpg" alt="Sliced Fish with Spring Onion" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Sliced Fish with Spring Onion</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">姜葱炒鱼片</p>
+              <h3 class="menu-card-name">Sliced Fish with Spring Onion</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $32</span></p>
+            </div>
           </article>
           <article class="menu-card">
-            <img src="assets/img/menu/sliced-fish-soup.jpg" alt="Sliced Fish Soup" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Sliced Fish Soup</h3>
+            <img src="assets/img/menu/sliced-fish-with-dried-chilli.jpg" alt="Sliced Fish with Dried Chilli" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">宫保鱼片</p>
+              <h3 class="menu-card-name">Sliced Fish with Dried Chilli</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $32</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/steamed-fish.jpg" alt="Steamed Fish Tail" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">蒸鱼尾</p>
+              <h3 class="menu-card-name">Steamed Fish Tail</h3>
+              <p class="menu-price"><span>$41</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/fish-tail-with-bitter-gourd-sauce.jpg" alt="Braised Fish Tail with Bittergourd in Black Bean Sauce" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">苦瓜豉汁鱼尾</p>
+              <h3 class="menu-card-name">Braised Fish Tail with Bittergourd in Black Bean Sauce</h3>
+              <p class="menu-price"><span>$49</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/fish-head-with-bitter-gourd-sauce.jpg" alt="Fish Head with Bittergourd in Black Bean Sauce" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">苦瓜豉汁鱼头</p>
+              <h3 class="menu-card-name">Fish Head with Bittergourd in Black Bean Sauce</h3>
+              <p class="menu-price"><span>$41</span></p>
+            </div>
           </article>
         </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">亚叁鱼尾</span><span class="menu-list-en">Assam Fish Tail</span></div><p class="menu-price"><span>$45</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">咖喱鱼尾</span><span class="menu-list-en">Curry Fish Tail</span></div><p class="menu-price"><span>$42</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">鱼头炉</span><span class="menu-list-en">Fish Head Steamboat/Pot</span></div><p class="menu-price"><span>$52</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">鱼尾炉</span><span class="menu-list-en">Fish Tail Steamboat/Pot</span></div><p class="menu-price"><span>$55</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">酸甜鱼片</span><span class="menu-list-en">Sweet &amp; Sour Fish</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $32</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">豉汁鱼片</span><span class="menu-list-en">Sliced Fish with Black Bean Sauce</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $32</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">黑胡椒鱼片</span><span class="menu-list-en">Black Pepper Sliced Fish</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $32</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">泰式鱼片</span><span class="menu-list-en">Thai Style Sliced Fish</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $32</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">甘香鱼尾</span><span class="menu-list-en">Gam Heong Fish Tail</span></div><p class="menu-price"><span>$52</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">炸鱼尾</span><span class="menu-list-en">Fried Fish Tail</span></div><p class="menu-price"><span>$48</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">甘香鱼头</span><span class="menu-list-en">Gam Heong Fish Head</span></div><p class="menu-price"><span>$41</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">砂锅鱼头</span><span class="menu-list-en">Claypot Fish Head</span></div><p class="menu-price"><span>$42</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">红斑鱼</span><span class="menu-list-en">Red Grouper</span></div><p class="menu-price"><span><span class="price-size">M</span> $60</span><span><span class="price-size">L</span> $80</span></p></li>
+        </ul>
       </section>
-      <section class="menu-category" id="cat-meat" data-category="meat">
-        <h2 class="menu-category-title">Chicken, Pork &amp; Beef <span class="menu-count">6</span></h2>
+      <section class="menu-category" id="cat-prawn" data-category="prawn">
+        <h2 class="menu-category-title">Prawn <span class="menu-category-zh">虾</span> <span class="menu-count">7</span></h2>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="assets/img/menu/salted-egg-prawn-ball.jpg" alt="Salted Egg Prawn Ball" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">金沙咸蛋虾球</p>
+              <h3 class="menu-card-name">Salted Egg Prawn Ball</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $32</span><span><span class="price-size">M</span> $58</span><span><span class="price-size">L</span> $72</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/cereal-prawn.jpg" alt="Cereal Prawn" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">麦片炸虾</p>
+              <h3 class="menu-card-name">Cereal Prawn</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $29</span><span><span class="price-size">M</span> $44</span><span><span class="price-size">L</span> $59</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/handmade-prawn-roll.jpg" alt="Handmade Fried Prawn Roll" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">炸枣</p>
+              <h3 class="menu-card-name">Handmade Fried Prawn Roll</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $36</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/salad-prawn-ball.jpg" alt="Salad Prawn Ball" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">沙律虾球</p>
+              <h3 class="menu-card-name">Salad Prawn Ball</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $29</span><span><span class="price-size">M</span> $45</span><span><span class="price-size">L</span> $59</span></p>
+            </div>
+          </article>
+        </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">干炒虾碌</span><span class="menu-list-en">Stir Fry Prawn</span></div><p class="menu-price"><span><span class="price-size">S</span> $29</span><span><span class="price-size">M</span> $45</span><span><span class="price-size">L</span> $59</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">叁巴虾碌</span><span class="menu-list-en">Sambal Prawn</span></div><p class="menu-price"><span><span class="price-size">S</span> $29</span><span><span class="price-size">M</span> $45</span><span><span class="price-size">L</span> $59</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">辣椒蟹酱虾</span><span class="menu-list-en">Chili Crab Sauce Prawn</span></div><p class="menu-price"><span><span class="price-size">S</span> $29</span><span><span class="price-size">M</span> $45</span><span><span class="price-size">L</span> $59</span></p></li>
+        </ul>
+      </section>
+      <section class="menu-category" id="cat-sotong" data-category="sotong">
+        <h2 class="menu-category-title">Sotong <span class="menu-category-zh">苏东</span> <span class="menu-count">4</span></h2>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="assets/img/menu/crispy-fried-sotong.jpg" alt="Crispy Fried Baby Squid" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">香脆苏东仔</p>
+              <h3 class="menu-card-name">Crispy Fried Baby Squid</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $20</span><span><span class="price-size">M</span> $25</span><span><span class="price-size">L</span> $35</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/salted-egg-sotong.jpg" alt="Salted Egg Squid" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">咸蛋苏东</p>
+              <h3 class="menu-card-name">Salted Egg Squid</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $23</span><span><span class="price-size">M</span> $32</span><span><span class="price-size">L</span> $49</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/assam-sambal-sotong.jpg" alt="Sambal Squid" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">叁巴苏东</p>
+              <h3 class="menu-card-name">Sambal Squid</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $23</span><span><span class="price-size">M</span> $32</span><span><span class="price-size">L</span> $49</span></p>
+            </div>
+          </article>
+        </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">牛油苏东</span><span class="menu-list-en">Butter Squid</span></div><p class="menu-price"><span><span class="price-size">S</span> $23</span><span><span class="price-size">M</span> $32</span><span><span class="price-size">L</span> $49</span></p></li>
+        </ul>
+      </section>
+      <section class="menu-category" id="cat-soup" data-category="soup">
+        <h2 class="menu-category-title">Soup <span class="menu-category-zh">汤类</span> <span class="menu-count">10</span></h2>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="assets/img/menu/sliced-fish-soup.jpg" alt="Sliced Fish Soup" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">鱼片汤</p>
+              <h3 class="menu-card-name">Sliced Fish Soup</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $20</span></p>
+            </div>
+          </article>
+        </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">蟹肉鱼漂羹</span><span class="menu-list-en">Crabmeat Fish Maw Soup</span></div><p class="menu-price"><span><span class="price-size">S</span> $23</span><span><span class="price-size">M</span> $32</span><span><span class="price-size">L</span> $49</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">冬菇海参焖鱼漂</span><span class="menu-list-en">Braised Sea Cucumber with Fish Maw</span></div><p class="menu-price"><span>$50</span><span>$70</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">蟹肉鱼翅羹</span><span class="menu-list-en">Braised Shark&#x27;s Fin Soup with Crab Meat</span></div><p class="menu-price"><span><span class="price-size">S</span> $53</span><span><span class="price-size">M</span> $78</span><span><span class="price-size">L</span> $104</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">银芽桂花炒鱼翅</span><span class="menu-list-en">Shark&#x27;s Fin with Scrambled Egg</span></div><p class="menu-price"><span><span class="price-size">S</span> $39</span><span><span class="price-size">M</span> $42</span><span><span class="price-size">L</span> $65</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">咸菜豆腐汤</span><span class="menu-list-en">Salted Vegetable Tofu Soup</span></div><p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $20</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">紫菜豆腐汤</span><span class="menu-list-en">Seaweed Tofu Soup</span></div><p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $20</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">苦瓜汤</span><span class="menu-list-en">Bittergourd Soup</span></div><p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $20</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">酸辣羹</span><span class="menu-list-en">Sour &amp; Spicy Thick Soup</span></div><p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $20</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">海鲜汤</span><span class="menu-list-en">Seafood Soup</span></div><p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $20</span></p></li>
+        </ul>
+      </section>
+      <section class="menu-category" id="cat-beef" data-category="beef">
+        <h2 class="menu-category-title">Beef <span class="menu-category-zh">牛肉类</span> <span class="menu-count">4</span></h2>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="assets/img/menu/stir-fried-spring-onion-beef.jpg" alt="Sliced Beef with Spring Onion" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">姜葱炒牛肉</p>
+              <h3 class="menu-card-name">Sliced Beef with Spring Onion</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $26</span><span><span class="price-size">M</span> $39</span><span><span class="price-size">L</span> $49</span></p>
+            </div>
+          </article>
+        </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">黑胡椒炒牛肉</span><span class="menu-list-en">Black Pepper Sliced Beef</span></div><p class="menu-price"><span><span class="price-size">S</span> $26</span><span><span class="price-size">M</span> $39</span><span><span class="price-size">L</span> $49</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">宫保炒牛肉</span><span class="menu-list-en">Sliced Beef with Dried Chilli</span></div><p class="menu-price"><span><span class="price-size">S</span> $26</span><span><span class="price-size">M</span> $39</span><span><span class="price-size">L</span> $49</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">姜葱炒牛肉</span><span class="menu-list-en">Sliced Beef with Onion</span></div><p class="menu-price"><span><span class="price-size">S</span> $26</span><span><span class="price-size">M</span> $39</span><span><span class="price-size">L</span> $49</span></p></li>
+        </ul>
+      </section>
+      <section class="menu-category" id="cat-chicken" data-category="chicken">
+        <h2 class="menu-category-title">Chicken <span class="menu-category-zh">鸡肉类</span> <span class="menu-count">9</span></h2>
         <div class="menu-grid">
           <article class="menu-card">
             <img src="assets/img/menu/prawn-paste-chicken.jpg" alt="Prawn Paste Chicken" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Prawn Paste Chicken</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">虾酱鸡</p>
+              <h3 class="menu-card-name">Prawn Paste Chicken</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $16</span><span><span class="price-size">M</span> $25</span><span><span class="price-size">L</span> $31</span></p>
+            </div>
           </article>
           <article class="menu-card">
             <img src="assets/img/menu/salted-egg-chicken.jpg" alt="Salted Egg Chicken" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Salted Egg Chicken</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">咸蛋鸡丁</p>
+              <h3 class="menu-card-name">Salted Egg Chicken</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $24</span><span><span class="price-size">L</span> $31</span></p>
+            </div>
           </article>
           <article class="menu-card">
             <img src="assets/img/menu/three-cup-chicken.jpg" alt="Three Cup Chicken" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Three Cup Chicken</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/king-pork-ribs.jpg" alt="King Pork Ribs" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">King Pork Ribs</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/red-wine-pork-ribs.jpg" alt="Red Wine Pork Ribs" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Red Wine Pork Ribs</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/stir-fried-spring-onion-beef.jpg" alt="Stir-Fried Spring Onion Beef" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Stir-Fried Spring Onion Beef</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">三杯鸡</p>
+              <h3 class="menu-card-name">Three Cup Chicken</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $24</span><span><span class="price-size">L</span> $31</span></p>
+            </div>
           </article>
         </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">宫保鸡丁</span><span class="menu-list-en">Chicken with Dried Chilli</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $24</span><span><span class="price-size">L</span> $31</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">峰皇鸡</span><span class="menu-list-en">Honey Chicken</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $24</span><span><span class="price-size">L</span> $31</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">泰式炸鸡</span><span class="menu-list-en">Thai Style Fried Chicken</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $24</span><span><span class="price-size">L</span> $31</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">姜葱炒鸡丁</span><span class="menu-list-en">Ginger &amp; Spring Onion Stir Fry Chicken</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $24</span><span><span class="price-size">L</span> $31</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">妈蜜鸡丁</span><span class="menu-list-en">Marmite Chicken</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $24</span><span><span class="price-size">L</span> $31</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">砂锅甘榜鸡</span><span class="menu-list-en">Claypot Kampung Chicken</span></div><p class="menu-price"><span><span class="price-size">S</span> $22</span><span><span class="price-size">M</span> $37</span><span><span class="price-size">L</span> $48</span></p></li>
+        </ul>
+      </section>
+      <section class="menu-category" id="cat-pork" data-category="pork">
+        <h2 class="menu-category-title">Pork <span class="menu-category-zh">猪肉类</span> <span class="menu-count">8</span></h2>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="assets/img/menu/red-wine-pork-ribs.jpg" alt="Red Wine Pork Rib" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">红酒排骨</p>
+              <h3 class="menu-card-name">Red Wine Pork Rib</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $22</span><span><span class="price-size">M</span> $36</span><span><span class="price-size">L</span> $48</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/king-pork-ribs.jpg" alt="Pork Ribs King" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">排骨王</p>
+              <h3 class="menu-card-name">Pork Ribs King</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $27</span><span><span class="price-size">L</span> $39</span></p>
+            </div>
+          </article>
+        </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">咕噜肉</span><span class="menu-list-en">Sweet &amp; Sour Pork</span></div><p class="menu-price"><span><span class="price-size">S</span> $16</span><span><span class="price-size">M</span> $25</span><span><span class="price-size">L</span> $32</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">妈蜜排骨</span><span class="menu-list-en">Marmite Pork Ribs</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $27</span><span><span class="price-size">L</span> $39</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">金蒜炸肉</span><span class="menu-list-en">Garlic Fried Sliced Pork</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $27</span><span><span class="price-size">L</span> $39</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">咸蛋排骨</span><span class="menu-list-en">Salted Egg Pork Rib</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $27</span><span><span class="price-size">L</span> $39</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">姜葱炒猪肉</span><span class="menu-list-en">Spring Onion Stir Fry Pork</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $27</span><span><span class="price-size">L</span> $39</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">砂锅咸鱼花腩煲</span><span class="menu-list-en">Claypot Salted Fish Pork</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $27</span><span><span class="price-size">L</span> $39</span></p></li>
+        </ul>
       </section>
       <section class="menu-category" id="cat-veg" data-category="veg">
-        <h2 class="menu-category-title">Vegetables &amp; Tofu <span class="menu-count">8</span></h2>
+        <h2 class="menu-category-title">Vegetables <span class="menu-category-zh">菜类</span> <span class="menu-count">14</span></h2>
         <div class="menu-grid">
           <article class="menu-card">
-            <img src="assets/img/menu/qing-long-vegetables.jpg" alt="Qing Long Vegetables" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Qing Long Vegetables</h3>
+            <img src="assets/img/menu/sambal-kang-kong.jpg" alt="Stir Fry Sambal / Garlic Kang Kong" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">马来风光</p>
+              <h3 class="menu-card-name">Stir Fry Sambal / Garlic Kang Kong</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $12</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+              <p class="menu-note">Option to choose Sambal or Garlic</p>
+            </div>
           </article>
           <article class="menu-card">
-            <img src="assets/img/menu/sambal-kang-kong.jpg" alt="Sambal Kang Kong" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Sambal Kang Kong</h3>
+            <img src="assets/img/menu/french-beans-with-dried-shrimp.jpg" alt="French Bean with Dried Shrimps" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">四季豆炒虾米</p>
+              <h3 class="menu-card-name">French Bean with Dried Shrimps</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $15</span><span><span class="price-size">M</span> $23</span><span><span class="price-size">L</span> $31</span></p>
+            </div>
           </article>
           <article class="menu-card">
-            <img src="assets/img/menu/french-beans-with-dried-shrimp.jpg" alt="French Beans with Dried Shrimp" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">French Beans with Dried Shrimp</h3>
+            <img src="assets/img/menu/yu-xiang-eggplant.jpg" alt="Yu Xiang Style Eggplant" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">鱼香茄子</p>
+              <h3 class="menu-card-name">Yu Xiang Style Eggplant</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $16</span><span><span class="price-size">M</span> $24</span><span><span class="price-size">L</span> $32</span></p>
+            </div>
           </article>
           <article class="menu-card">
-            <img src="assets/img/menu/salted-fish-beansprouts.jpg" alt="Salted Fish Beansprouts" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Salted Fish Beansprouts</h3>
+            <img src="assets/img/menu/salted-fish-beansprouts.jpg" alt="Bean Sprout with Salted Fish" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">咸鱼豆芽</p>
+              <h3 class="menu-card-name">Bean Sprout with Salted Fish</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $15</span><span><span class="price-size">M</span> $23</span><span><span class="price-size">L</span> $31</span></p>
+            </div>
           </article>
           <article class="menu-card">
-            <img src="assets/img/menu/yu-xiang-eggplant.jpg" alt="Yu Xiang Eggplant" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Yu Xiang Eggplant</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/hotplate-beancurd.jpg" alt="Hotplate Beancurd" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Hotplate Beancurd</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/creamy-corn-tofu.jpg" alt="Creamy Corn Tofu" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Creamy Corn Tofu</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/spring-onion-omelette.jpg" alt="Spring Onion Omelette" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Spring Onion Omelette</h3>
+            <img src="assets/img/menu/qing-long-vegetables.jpg" alt="Qing Long Veg" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">青龙菜</p>
+              <h3 class="menu-card-name">Qing Long Veg</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $15</span><span><span class="price-size">M</span> $23</span><span><span class="price-size">L</span> $31</span></p>
+              <p class="menu-note">Option to choose Sambal or Garlic</p>
+            </div>
           </article>
         </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">三黄上汤宽菜</span><span class="menu-list-en">Chinese Spinach with Egg Trio in Superior Stock</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $39</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">蒜片菜胆</span><span class="menu-list-en">Kailan with Garlic / Oyster Sauce / Sambal</span><span class="menu-note">Option to choose Garlic or Oyster Sauce or Sambal</span></div><p class="menu-price"><span><span class="price-size">S</span> $12</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">蒜片西兰花</span><span class="menu-list-en">Broccoli with Garlic</span></div><p class="menu-price"><span><span class="price-size">S</span> $15</span><span><span class="price-size">M</span> $23</span><span><span class="price-size">L</span> $31</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">四大天王</span><span class="menu-list-en">Four Heavenly Kings</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $39</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">罗汉蔬</span><span class="menu-list-en">Mix Vegetables Fermented Sauce</span></div><p class="menu-price"><span><span class="price-size">S</span> $15</span><span><span class="price-size">M</span> $23</span><span><span class="price-size">L</span> $31</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">西兰花炒虾球</span><span class="menu-list-en">Broccoli with Stir Fry Prawn</span></div><p class="menu-price"><span><span class="price-size">S</span> $31</span><span><span class="price-size">M</span> $46</span><span><span class="price-size">L</span> $59</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">西兰花炒蟹肉</span><span class="menu-list-en">Broccoli with Crab Meat</span></div><p class="menu-price"><span><span class="price-size">S</span> $31</span><span><span class="price-size">M</span> $46</span><span><span class="price-size">L</span> $59</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">參巴臭豆</span><span class="menu-list-en">Sambal Petai</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $39</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">蕃薯葉</span><span class="menu-list-en">Sweet Potato Leaf</span><span class="menu-note">Option to choose Sambal or Garlic</span></div><p class="menu-price"><span><span class="price-size">S</span> $12</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p></li>
+        </ul>
       </section>
-      <section class="menu-category" id="cat-rice" data-category="rice">
-        <h2 class="menu-category-title">Rice <span class="menu-count">10</span></h2>
+      <section class="menu-category" id="cat-egg" data-category="egg">
+        <h2 class="menu-category-title">Egg <span class="menu-category-zh">鸡蛋类</span> <span class="menu-count">5</span></h2>
         <div class="menu-grid">
           <article class="menu-card">
-            <img src="assets/img/menu/yangzhou-fried-rice.jpg" alt="Yangzhou Fried Rice" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Yangzhou Fried Rice</h3>
+            <img src="assets/img/menu/spring-onion-omelette.jpg" alt="Onion Omelette" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">大葱煎蛋</p>
+              <h3 class="menu-card-name">Onion Omelette</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $15</span><span><span class="price-size">M</span> $20</span><span><span class="price-size">L</span> $25</span></p>
+            </div>
           </article>
+        </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">芙蓉蛋</span><span class="menu-list-en">Fu Rong Omelette</span></div><p class="menu-price"><span><span class="price-size">S</span> $12</span><span><span class="price-size">M</span> $18</span><span><span class="price-size">L</span> $22</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">虾仁煎蛋</span><span class="menu-list-en">Shrimp Omelette</span></div><p class="menu-price"><span><span class="price-size">S</span> $15</span><span><span class="price-size">M</span> $20</span><span><span class="price-size">L</span> $25</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">菜莆煎蛋</span><span class="menu-list-en">Pan Fried Omelette with Preserved Turnip</span></div><p class="menu-price"><span><span class="price-size">S</span> $12</span><span><span class="price-size">M</span> $18</span><span><span class="price-size">L</span> $22</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">蒸蛋啦啦</span><span class="menu-list-en">Steam Egg Lala</span></div><p class="menu-price"><span><span class="price-size">S</span> $19</span><span><span class="price-size">M</span> $26</span><span><span class="price-size">L</span> $32</span></p></li>
+        </ul>
+      </section>
+      <section class="menu-category" id="cat-beancurd" data-category="beancurd">
+        <h2 class="menu-category-title">Beancurd <span class="menu-category-zh">豆腐类</span> <span class="menu-count">5</span></h2>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="assets/img/menu/hotplate-beancurd.jpg" alt="Hotplate Beancurd" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">铁板豆腐</p>
+              <h3 class="menu-card-name">Hotplate Beancurd</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $16</span><span><span class="price-size">M</span> $25</span><span><span class="price-size">L</span> $34</span></p>
+            </div>
+          </article>
+        </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">日式碎肉铁板豆腐</span><span class="menu-list-en">Japanese Hotplate Tofu</span></div><p class="menu-price"><span>$25</span><span>$48</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">砂锅豆腐</span><span class="menu-list-en">Claypot Beancurd</span></div><p class="menu-price"><span><span class="price-size">S</span> $16</span><span><span class="price-size">M</span> $25</span><span><span class="price-size">L</span> $34</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">泰式豆腐</span><span class="menu-list-en">Deep Fried Beancurd in Thai Sauce</span></div><p class="menu-price"><span><span class="price-size">S</span> $16</span><span><span class="price-size">M</span> $25</span><span><span class="price-size">L</span> $34</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">蟹肉西兰花豆腐</span><span class="menu-list-en">Braised Beancurd with Broccoli &amp; Crab Meat</span></div><p class="menu-price"><span>$25</span><span>$48</span></p></li>
+        </ul>
+      </section>
+      <section class="menu-category" id="cat-rice" data-category="rice">
+        <h2 class="menu-category-title">Rice <span class="menu-category-zh">饭类</span> <span class="menu-count">25</span></h2>
+        <div class="menu-grid">
           <article class="menu-card">
             <img src="assets/img/menu/salted-fish-fried-rice.jpg" alt="Salted Fish Fried Rice" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Salted Fish Fried Rice</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">咸鱼炒饭</p>
+              <h3 class="menu-card-name">Salted Fish Fried Rice</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $9</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/yangzhou-fried-rice.jpg" alt="Yang Zhou Fried Rice" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">扬州炒饭</p>
+              <h3 class="menu-card-name">Yang Zhou Fried Rice</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $9</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
           </article>
           <article class="menu-card">
             <img src="assets/img/menu/sambal-fried-rice.jpg" alt="Sambal Fried Rice" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Sambal Fried Rice</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">叁巴炒饭</p>
+              <h3 class="menu-card-name">Sambal Fried Rice</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $9</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
           </article>
           <article class="menu-card">
             <img src="assets/img/menu/mui-fan.jpg" alt="Mui Fan" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Mui Fan</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/black-pepper-rice.jpg" alt="Black Pepper Rice" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Black Pepper Rice</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/gong-bao-rice.jpg" alt="Gong Bao Rice" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Gong Bao Rice</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/sweet-sour-rice.jpg" alt="Sweet &amp; Sour Rice" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Sweet &amp; Sour Rice</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/pork-ribs-rice.jpg" alt="Pork Ribs Rice" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Pork Ribs Rice</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">烩饭</p>
+              <h3 class="menu-card-name">Mui Fan</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $9</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
           </article>
           <article class="menu-card">
             <img src="assets/img/menu/salted-egg-chicken-rice.jpg" alt="Salted Egg Chicken Rice" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Salted Egg Chicken Rice</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">咸蛋鸡丁饭</p>
+              <h3 class="menu-card-name">Salted Egg Chicken Rice</h3>
+              <p class="menu-price"><span>$11</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/pork-ribs-rice.jpg" alt="Pork Rib Rice" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">排骨饭</p>
+              <h3 class="menu-card-name">Pork Rib Rice</h3>
+              <p class="menu-price"><span>$10</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/gong-bao-rice.jpg" alt="Gong Bao Chicken Rice" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">宫保鸡丁饭</p>
+              <h3 class="menu-card-name">Gong Bao Chicken Rice</h3>
+              <p class="menu-price"><span>$10</span></p>
+            </div>
           </article>
           <article class="menu-card">
             <img src="assets/img/menu/sambal-sotong-rice.jpg" alt="Sambal Sotong Rice" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Sambal Sotong Rice</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">叁巴苏东饭</p>
+              <h3 class="menu-card-name">Sambal Sotong Rice</h3>
+              <p class="menu-price"><span>$12</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/sweet-sour-rice.jpg" alt="Sweet &amp; Sour Pork Rice" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">咕噜猪肉饭</p>
+              <h3 class="menu-card-name">Sweet &amp; Sour Pork Rice</h3>
+              <p class="menu-price"><span>$10</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/black-pepper-rice.jpg" alt="Black Pepper Chicken Rice" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">黑胡椒鸡丁饭</p>
+              <h3 class="menu-card-name">Black Pepper Chicken Rice</h3>
+              <p class="menu-price"><span>$10</span></p>
+            </div>
           </article>
         </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">海鲜炒饭</span><span class="menu-list-en">Seafood Fried Rice</span></div><p class="menu-price"><span><span class="price-size">S</span> $9</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">白饭</span><span class="menu-list-en">White Rice</span></div><p class="menu-price"><span>$1</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">姜葱鸡丁饭</span><span class="menu-list-en">Stir Fry Ginger Spring Onion Chicken Rice</span></div><p class="menu-price"><span>$10</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">姜葱猪肉饭</span><span class="menu-list-en">Stir Fry Ginger Spring Onion Pork Rice</span></div><p class="menu-price"><span>$10</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">姜葱牛肉饭</span><span class="menu-list-en">Stir Fry Ginger Spring Onion Beef Rice</span></div><p class="menu-price"><span>$12</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">姜葱鱼片饭</span><span class="menu-list-en">Stir Fry Ginger Spring Onion Fish Rice</span></div><p class="menu-price"><span>$12</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">宫保猪肉饭</span><span class="menu-list-en">Gong Bao Sliced Pork Rice</span></div><p class="menu-price"><span>$10</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">宫保鱼片饭</span><span class="menu-list-en">Gong Bao Sliced Fish Rice</span></div><p class="menu-price"><span>$12</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">宫保牛肉饭</span><span class="menu-list-en">Gong Bao Sliced Beef Rice</span></div><p class="menu-price"><span>$12</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">叁巴虾饭</span><span class="menu-list-en">Sambal Prawn Rice</span></div><p class="menu-price"><span>$12</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">咕噜鸡肉饭</span><span class="menu-list-en">Sweet &amp; Sour Chicken Rice</span></div><p class="menu-price"><span>$10</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">咕噜鱼饭</span><span class="menu-list-en">Sweet &amp; Sour Fish Rice</span></div><p class="menu-price"><span>$12</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">咖喱鸡丁饭</span><span class="menu-list-en">Curry Diced Chicken Rice</span></div><p class="menu-price"><span>$10</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">黑胡椒鱼片饭</span><span class="menu-list-en">Black Pepper Sliced Fish Rice</span></div><p class="menu-price"><span>$12</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">黑胡椒牛肉饭</span><span class="menu-list-en">Black Pepper Beef Rice</span></div><p class="menu-price"><span>$12</span></p></li>
+        </ul>
       </section>
       <section class="menu-category" id="cat-noodles" data-category="noodles">
-        <h2 class="menu-category-title">Noodles <span class="menu-count">18</span></h2>
+        <h2 class="menu-category-title">Noodle <span class="menu-category-zh">面类</span> <span class="menu-count">20</span></h2>
         <div class="menu-grid">
           <article class="menu-card">
-            <img src="assets/img/menu/signature-claypot-noodles.jpg" alt="Signature Claypot Noodles" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Signature Claypot Noodles</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/char-kway-teow.jpg" alt="Char Kway Teow" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Char Kway Teow</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/fried-hokkien-noodles.jpg" alt="Fried Hokkien Noodles" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Fried Hokkien Noodles</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/mee-goreng.jpg" alt="Mee Goreng" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Mee Goreng</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/hor-fun.jpg" alt="Hor Fun" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Hor Fun</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/hor-fun-with-gravy.jpg" alt="Hor Fun with Gravy" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Hor Fun with Gravy</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/wat-dan-hor-fun.jpg" alt="Wat Dan Hor Fun" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Wat Dan Hor Fun</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/seafood-hor-fun.jpg" alt="Seafood Hor Fun" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Seafood Hor Fun</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/stir-fried-hor-fun.jpg" alt="Stir-Fried Hor Fun" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Stir-Fried Hor Fun</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/stir-fried-beef-hor-fun.jpg" alt="Stir-Fried Beef Hor Fun" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Stir-Fried Beef Hor Fun</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/seafood-crispy-noodles.jpg" alt="Seafood Crispy Noodles" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Seafood Crispy Noodles</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/seafood-white-noodles.jpg" alt="Seafood White Noodles" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Seafood White Noodles</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/stewed-ee-fu-noodles.jpg" alt="Stewed Ee-Fu Noodles" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Stewed Ee-Fu Noodles</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/bee-hoon-with-gravy.jpg" alt="Bee Hoon with Gravy" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Bee Hoon with Gravy</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/fish-sauce-bee-hoon.jpg" alt="Fish Sauce Bee Hoon" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Fish Sauce Bee Hoon</h3>
-          </article>
-          <article class="menu-card">
-            <img src="assets/img/menu/xin-zhou-bee-hoon.jpg" alt="Xin Zhou Bee Hoon" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Xin Zhou Bee Hoon</h3>
+            <img src="assets/img/menu/signature-claypot-noodles.jpg" alt="Signature Claypot Noodle" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">招牌砂锅面</p>
+              <h3 class="menu-card-name">Signature Claypot Noodle</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $13</span><span><span class="price-size">M</span> $22</span><span><span class="price-size">L</span> $38</span></p>
+            </div>
           </article>
           <article class="menu-card">
             <img src="assets/img/menu/braised-pork-knuckle-bee-hoon.jpg" alt="Braised Pork Knuckle Bee Hoon" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Braised Pork Knuckle Bee Hoon</h3>
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">猪脚米粉</p>
+              <h3 class="menu-card-name">Braised Pork Knuckle Bee Hoon</h3>
+              <p class="menu-price"><span>$22</span><span>$42</span></p>
+            </div>
           </article>
           <article class="menu-card">
-            <img src="assets/img/menu/braised-pork-leg-knuckle-bee-hoon.jpg" alt="Braised Pork Leg Knuckle Bee Hoon" width="720" height="720" loading="lazy" decoding="async">
-            <h3 class="menu-card-name">Braised Pork Leg Knuckle Bee Hoon</h3>
+            <img src="assets/img/menu/stir-fried-hor-fun.jpg" alt="Stir Fry Hor Fun" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">干炒河粉</p>
+              <h3 class="menu-card-name">Stir Fry Hor Fun</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/mee-goreng.jpg" alt="Mee Goreng" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">马来炒面</p>
+              <h3 class="menu-card-name">Mee Goreng</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/fried-hokkien-noodles.jpg" alt="Fried Hokkien Mee" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">福建面</p>
+              <h3 class="menu-card-name">Fried Hokkien Mee</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/xin-zhou-bee-hoon.jpg" alt="Sin Chew Fried Bee Hoon" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">星洲米粉</p>
+              <h3 class="menu-card-name">Sin Chew Fried Bee Hoon</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/stewed-ee-fu-noodles.jpg" alt="Stewed Seafood Ee Fu Noodles" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">海鲜焖伊面</p>
+              <h3 class="menu-card-name">Stewed Seafood Ee Fu Noodles</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $11</span><span><span class="price-size">M</span> $16</span><span><span class="price-size">L</span> $22</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/hor-fun-with-gravy.jpg" alt="Hor Fun with Gravy" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">什锦河粉</p>
+              <h3 class="menu-card-name">Hor Fun with Gravy</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/bee-hoon-with-gravy.jpg" alt="Bee Hoon with Gravy" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">汤汁米粉</p>
+              <h3 class="menu-card-name">Bee Hoon with Gravy</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/stir-fried-beef-hor-fun.jpg" alt="Stir Fry Beef Hor Fun" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">牛肉河粉</p>
+              <h3 class="menu-card-name">Stir Fry Beef Hor Fun</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $11</span><span><span class="price-size">M</span> $16</span><span><span class="price-size">L</span> $22</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/fish-sauce-bee-hoon.jpg" alt="Fish Sauce Bee Hoon" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">鱼露米粉</p>
+              <h3 class="menu-card-name">Fish Sauce Bee Hoon</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/wat-dan-hor-fun.jpg" alt="Wa Dan Hor Fun" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">滑蛋河粉</p>
+              <h3 class="menu-card-name">Wa Dan Hor Fun</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/seafood-white-noodles.jpg" alt="Seafood White Noodles" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">海鲜炒米粉</p>
+              <h3 class="menu-card-name">Seafood White Noodles</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/seafood-crispy-noodles.jpg" alt="Seafood Crispy Noodles" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">海鲜生面</p>
+              <h3 class="menu-card-name">Seafood Crispy Noodles</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $11</span><span><span class="price-size">M</span> $16</span><span><span class="price-size">L</span> $22</span></p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/img/menu/seafood-hor-fun.jpg" alt="Seafood Hor Fun" width="720" height="720" loading="lazy" decoding="async">
+            <div class="menu-card-body">
+              <p class="menu-card-zh" lang="zh">海鲜河粉</p>
+              <h3 class="menu-card-name">Seafood Hor Fun</h3>
+              <p class="menu-price"><span><span class="price-size">S</span> $11</span><span><span class="price-size">M</span> $16</span><span><span class="price-size">L</span> $22</span></p>
+            </div>
           </article>
         </div>
+        <ul class="menu-list">
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">干炒面线</span><span class="menu-list-en">Stir Fry Mee Sua</span></div><p class="menu-price"><span><span class="price-size">S</span> $12</span><span><span class="price-size">M</span> $17</span><span><span class="price-size">L</span> $22</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">三捞河粉</span><span class="menu-list-en">Sliced Fish Hor Fun</span></div><p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">干炒伊面</span><span class="menu-list-en">Fried Ee Fu Noodles</span></div><p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">鱼片粗米粉汤</span><span class="menu-list-en">Sliced Fish Thick Bee Hoon Soup</span></div><p class="menu-price"><span><span class="price-size">S</span> $10</span><span><span class="price-size">M</span> $15</span><span><span class="price-size">L</span> $21</span></p></li>
+          <li><div class="menu-list-name"><span class="menu-card-zh" lang="zh">干炒牛河</span><span class="menu-list-en">Beef Hor Fun with Gravy</span></div><p class="menu-price"><span><span class="price-size">S</span> $11</span><span><span class="price-size">M</span> $16</span><span><span class="price-size">L</span> $22</span></p></li>
+        </ul>
       </section>
   </div>
 </main>
