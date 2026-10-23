@@ -41,7 +41,7 @@ a { color: inherit; }
 
 /* Header */
 .site-header {
-  background: rgba(0, 0, 0, 0.94); /* stays black: the neon logo artwork has a black background */
+  background: var(--charcoal);
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
@@ -82,7 +82,7 @@ a { color: inherit; }
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #2a2e31;
+  background: rgba(255, 255, 255, 0.1);
   color: #e6e8ea;
   text-decoration: none;
   transition: background 0.15s ease;
