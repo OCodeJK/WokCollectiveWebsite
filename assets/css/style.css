@@ -746,6 +746,22 @@ a { color: inherit; }
 
 .footer-links a:hover { color: var(--gold-light); }
 
+.footer-powered {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: #7d8287;
+}
+
+.footer-powered a {
+  color: #a9aeb2;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-powered a:hover { color: var(--gold-light); }
+
 @media (max-width: 480px) {
   .footer-inner { flex-direction: column; text-align: center; }
 }
