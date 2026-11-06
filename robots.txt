@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /guidelines/
+Disallow: /tools/
+
+Sitemap: https://clawupzichar.sg/sitemap.xml
