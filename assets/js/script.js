@@ -182,3 +182,38 @@ animate(".logo-img, .icon-link", {
     });
   });
 })();
+
+// Announcement bar: rotate messages, paused while hovered or keyboard-focused
+(function () {
+  const bar = document.querySelector(".announce");
+  if (!bar) return;
+  const items = Array.from(bar.querySelectorAll(".announce-item"));
+  if (items.length < 2) return;
+
+  const INTERVAL_MS = 4000;
+  let index = 0;
+  let timer = null;
+
+  function show(next) {
+    const current = items[index];
+    current.classList.remove("is-active");
+    current.classList.add("is-leaving");
+    setTimeout(() => current.classList.remove("is-leaving"), 400);
+    index = next % items.length;
+    items[index].classList.add("is-active");
+  }
+
+  function start() { stop(); timer = setInterval(() => show(index + 1), INTERVAL_MS); }
+  function stop() { clearInterval(timer); timer = null; }
+
+  bar.addEventListener("mouseenter", stop);
+  bar.addEventListener("mouseleave", start);
+  bar.addEventListener("focusin", (e) => {
+    stop();
+    const item = e.target.closest(".announce-item");
+    if (item && item !== items[index]) show(items.indexOf(item));
+  });
+  bar.addEventListener("focusout", start);
+
+  start();
+})();

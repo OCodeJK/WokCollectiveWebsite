@@ -41,7 +41,7 @@ a { color: inherit; }
 
 /* Header */
 .site-header {
-  background: var(--charcoal);
+  background: #000; /* matches the logo's black background so its square edge disappears */
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
@@ -978,3 +978,50 @@ a { color: inherit; }
   .menu-category-title { font-size: 1.25rem; }
 }
 
+
+/* Announcement bar: slim rotating messages above the header */
+.announce {
+  background: var(--gold-light);
+  color: var(--charcoal-dark);
+  font-size: 0.85rem;
+}
+
+.announce-track {
+  position: relative;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.announce-item {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  visibility: hidden;
+}
+
+.announce-item.is-active { opacity: 1; transform: none; visibility: visible; }
+.announce-item.is-leaving { opacity: 0; transform: translateY(-100%); visibility: visible; }
+
+.announce-item a { color: inherit; text-decoration: none; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+.announce-item a:hover, .announce-item a:focus-visible { text-decoration: underline; }
+.announce-item strong { font-weight: 800; }
+
+@media (max-width: 380px) {
+  .announce { font-size: 0.78rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announce-item { transition: none; transform: none; }
+  .announce-item.is-leaving { transform: none; }
+}
